@@ -10,7 +10,8 @@ class MoedaTest {
     @DisplayName("Escrever 1 real por extenso")
     void casoUm() {
         Moeda umReal = new Moeda(1);
-        assertEquals(umReal.porExtenso(), new LinhaDoCheque("um real"));
+        LinhaDoCheque umRealPorExtenso = umReal.porExtenso();
+        assertEquals(umRealPorExtenso, new LinhaDoCheque("um real"));
     }
 
     @Test

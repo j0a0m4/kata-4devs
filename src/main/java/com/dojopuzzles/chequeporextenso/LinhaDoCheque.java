@@ -3,6 +3,7 @@ package com.dojopuzzles.chequeporextenso;
 import java.util.Objects;
 
 public class LinhaDoCheque {
+    private Unidade unidade;
     private String cifra;
 
     public LinhaDoCheque(String valor) {
@@ -14,6 +15,8 @@ public class LinhaDoCheque {
     }
 
     public String toString() {
+        if (unidade != null)
+            return unidade.toString();
         return this.cifra;
     }
 
@@ -22,6 +25,7 @@ public class LinhaDoCheque {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         LinhaDoCheque that = (LinhaDoCheque) o;
-        return Objects.equals(cifra, that.cifra);
+        return Objects.equals(cifra, that.cifra)
+            && Objects.equals(unidade, that.unidade);
     }
 }
