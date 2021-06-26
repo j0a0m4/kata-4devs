@@ -19,4 +19,11 @@ class MoedaTest {
         Moeda doisReais = new Moeda(2);
         assertEquals(doisReais.porExtenso(), new LinhaDoCheque("dois reais"));
     }
+
+    @Test
+    @DisplayName("Escrever 3 reais por extenso")
+    void casoTres() {
+        Moeda tresReais = new Moeda(3);
+        assertEquals(tresReais.porExtenso(), new LinhaDoCheque("três reais"));
+    }
 }

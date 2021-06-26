@@ -11,6 +11,9 @@ public class Moeda {
         if (this.valor.equals(1)) {
             return new LinhaDoCheque("um real");
         }
-        return new LinhaDoCheque("dois reais");
+        if (this.valor.equals(2)) {
+            return new LinhaDoCheque("dois reais");
+        }
+        return new LinhaDoCheque("três reais");
     }
 }
