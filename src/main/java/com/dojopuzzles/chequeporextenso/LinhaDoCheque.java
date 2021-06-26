@@ -9,6 +9,10 @@ public class LinhaDoCheque {
         this.cifra = valor;
     }
 
+    public LinhaDoCheque(Unidade unidade) {
+        this.unidade = unidade;
+    }
+
     public String toString() {
         return this.cifra;
     }
