@@ -1,5 +1,7 @@
 package com.dojopuzzles.chequeporextenso;
 
+import java.util.Map;
+
 public class Moeda {
     private Integer valor;
 
@@ -8,6 +10,9 @@ public class Moeda {
     }
 
     public LinhaDoCheque porExtenso() {
-        return new LinhaDoCheque("um real");
+        if (this.valor.equals(1)) {
+            return new LinhaDoCheque("um real");
+        }
+        return new LinhaDoCheque("dois reais");
     }
 }
