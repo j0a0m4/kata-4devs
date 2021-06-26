@@ -1,7 +1,5 @@
 package com.dojopuzzles.chequeporextenso;
 
-import java.util.Map;
-
 public class Moeda {
     private Integer valor;
 

@@ -9,6 +9,10 @@ public class LinhaDoCheque {
         this.cifra = valor;
     }
 
+    public String toString() {
+        return this.cifra;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
