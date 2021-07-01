@@ -3,7 +3,11 @@ package com.dojopuzzles.chequeporextenso;
 public enum Unidade {
     UM("um"),
     DOIS("dois"),
-    TRES("três");
+    TRES("três"),
+    QUATRO("quatro"),
+    CINCO("cinco"),
+    SEIS("seis"),
+    SETE
 
     private String valorPorExtenso;
 

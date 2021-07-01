@@ -29,4 +29,12 @@ class MoedaTest {
         var tresReaisPorExtenso = tresReais.porExtenso();
         assertEquals(new LinhaDoCheque(Unidade.TRES).toString(), "três reais");
     }
+
+    @Test
+    @DisplayName("Escrever 4 Reais por extenso")
+    void casoQuatro(){
+        Moeda quatroReais = new Moeda(4);
+        var quatroReaisPorExtenso = quatroReais.porExtenso();
+        assertEquals(new LinhaDoCheque(Unidade.QUATRO).toString(),"quatro reais");
+    }
 }
