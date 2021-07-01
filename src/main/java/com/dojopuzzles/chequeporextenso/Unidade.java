@@ -14,4 +14,9 @@ public enum Unidade {
     public static Unidade from(Integer valor) {
         return Unidade.values()[valor];
     }
+
+    @Override
+    public String toString() {
+        return this.valorPorExtenso;
+    }
 }

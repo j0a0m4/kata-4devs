@@ -10,12 +10,6 @@ public class Moeda {
     public LinhaDoCheque porExtenso() {
         Unidade unidade = Unidade.from(this.valor - 1);
 
-        if (this.valor.equals(1)) {
-            return new LinhaDoCheque(unidade);
-        }
-        if (this.valor.equals(2)) {
-            return new LinhaDoCheque(unidade);
-        }
-        return new LinhaDoCheque("três reais");
+        return new LinhaDoCheque(unidade);
     }
 }
