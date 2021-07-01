@@ -11,7 +11,7 @@ class MoedaTest {
     void casoUm() {
         Moeda umReal = new Moeda(1);
         LinhaDoCheque umRealPorExtenso = umReal.porExtenso();
-        assertEquals(umRealPorExtenso, new LinhaDoCheque("um real"));
+        assertEquals(new LinhaDoCheque("um real"), umRealPorExtenso);
     }
 
     @Test

@@ -15,8 +15,8 @@ public class LinhaDoCheque {
     }
 
     public String toString() {
-        if (unidade != null)
-            return unidade.toString();
+        if (cifra == null)
+            return String.format("%s real", unidade);
         return this.cifra;
     }
 

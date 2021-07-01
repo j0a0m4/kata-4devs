@@ -18,4 +18,8 @@ REGRAS:
  - Evitaremos tipos primitivos, ao invés disso, encapsularemos em classes de negócio;
  - Máximo de 2 indentações por método (sem if dentro de if);
  - Sem invocation chain (train wreck)
- - No Patterns
+ - No Patterns (Factory, Delegate)
+
+Usaremos TDD :)
+
+Pesquisa depois: Complexidade ciclomática
