@@ -41,4 +41,11 @@ class MoedaTest {
         Moeda dezReais = new Moeda(10);
         assertEquals("dez reais", dezReais.porExtenso().toString());
     }
+
+    @Test
+    @DisplayName("Escrever 11 reais por extenso")
+    void casoOnze() {
+        Moeda onzeReais = new Moeda(11);
+        assertEquals("onze reais", onzeReais.porExtenso().toString());
+    }
 }

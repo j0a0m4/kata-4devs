@@ -1,7 +1,15 @@
 package com.dojopuzzles.chequeporextenso;
 
 public enum Dezena {
-    DEZ("dez"); // 0
+    DEZ("dez"),
+    VINTE("vinte"),
+    TRINTA("trinta"),
+    QUARENTA("quarenta"),
+    CINQUENTA("cinquenta"),
+    SESSENTA("sessenta"),
+    SETENTA("setenta"),
+    OITENTA("oitenta"),
+    NOVENTA("noventa");
 
     private final String valorPorExtenso;
 
