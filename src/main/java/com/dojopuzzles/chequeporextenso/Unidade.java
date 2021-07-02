@@ -7,7 +7,9 @@ public enum Unidade {
     QUATRO("quatro"),
     CINCO("cinco"),
     SEIS("seis"),
-    SETE
+    SETE("sete"),
+    OITO("oito"),
+    NOVE("nove");
 
     private String valorPorExtenso;
 

@@ -8,8 +8,12 @@ public class Moeda {
     }
 
     public LinhaDoCheque porExtenso() {
-        Unidade unidade = Unidade.from(this.valor - 1);
+        if (this.valor < 10) {
+            Unidade unidade = Unidade.from(this.valor - 1);
+            return new LinhaDoCheque(unidade);
+        }
 
-        return new LinhaDoCheque(unidade);
+        Dezena dezena = Dezena.from(this.valor);
+        return new LinhaDoCheque(dezena);
     }
 }
