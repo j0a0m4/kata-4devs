@@ -2,6 +2,15 @@ package com.dojopuzzles.chequeporextenso;
 
 public enum Dezena {
     DEZ("dez"),
+    ONZE("onze"),
+    DOZE("doze"),
+    TREZE("treze"),
+    QUATORZE("quatorze"),
+    QUINZE("quinze"),
+    DEZESSEIS("dezesseis"),
+    DEZESSETE("dezessete"),
+    DEZOITO("dezoito"),
+    DEZENOVE("dezenove"),
     VINTE("vinte"),
     TRINTA("trinta"),
     QUARENTA("quarenta"),
