@@ -1,7 +1,8 @@
 package com.dojopuzzles.chequeporextenso;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MoedaTest {
@@ -10,39 +11,34 @@ class MoedaTest {
     @DisplayName("Escrever 1 real por extenso")
     void casoUm() {
         Moeda umReal = new Moeda(1);
-        LinhaDoCheque umRealPorExtenso = umReal.porExtenso();
-        assertEquals(new LinhaDoCheque(Unidade.UM).toString(), "um real");
+        assertEquals("um real", umReal.porExtenso().toString());
     }
 
     @Test
     @DisplayName("Escrever 2 reais por extenso")
     void casoDois() {
         Moeda doisReais = new Moeda(2);
-        var doisReaisPorExtenso = doisReais.porExtenso();
-        assertEquals(new LinhaDoCheque(Unidade.DOIS).toString(), "dois reais");
+        assertEquals("dois reais", doisReais.porExtenso().toString());
     }
 
     @Test
     @DisplayName("Escrever 3 reais por extenso")
     void casoTres() {
         Moeda tresReais = new Moeda(3);
-        var tresReaisPorExtenso = tresReais.porExtenso();
-        assertEquals(new LinhaDoCheque(Unidade.TRES).toString(), "três reais");
+        assertEquals("três reais", tresReais.porExtenso().toString());
     }
 
     @Test
     @DisplayName("Escrever 4 reais por extenso")
-    void casoQuatro(){
+    void casoQuatro() {
         Moeda quatroReais = new Moeda(4);
-        var quatroReaisPorExtenso = quatroReais.porExtenso();
-        assertEquals(new LinhaDoCheque(Unidade.QUATRO).toString(),"quatro reais");
+        assertEquals("quatro reais", quatroReais.porExtenso().toString());
     }
 
     @Test
     @DisplayName("Escrever 10 reais por extenso")
-    void casoDez(){
+    void casoDez() {
         Moeda dezReais = new Moeda(10);
-        var dezReaisPorExtenso = dezReais.porExtenso();
-        assertEquals("dez reais", new LinhaDoCheque(Dezena.DEZ).toString());
+        assertEquals("dez reais", dezReais.porExtenso().toString());
     }
 }
