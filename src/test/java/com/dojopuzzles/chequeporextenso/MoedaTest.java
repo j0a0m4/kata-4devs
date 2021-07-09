@@ -2,6 +2,8 @@ package com.dojopuzzles.chequeporextenso;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
+
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -54,7 +56,7 @@ class MoedaTest {
     @DisplayName("Escrever 20 reais por extenso")
     void casoVinte() {
         Moeda vinteReais = new Moeda(20);
-        assertEquals(new LinhaDoCheque(Dezena.VINTE), vinteReais.porExtenso());
+        assertEquals(new LinhaDoCheque(Dezena.VINTE, Unidade.ZERO), vinteReais.porExtenso());
     }
 
     @Test
@@ -97,6 +99,13 @@ class MoedaTest {
     void casoTrintaNove() {
         Moeda trintaNoveReais = new Moeda(39);
         assertEquals(new LinhaDoCheque(Dezena.TRINTA, Unidade.NOVE), trintaNoveReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 40 reais por extenso")
+    void casoQuarenta() {
+        Moeda quarentaReais = new Moeda(40);
+        assertEquals(new LinhaDoCheque(Dezena.QUARENTA, Unidade.ZERO), quarentaReais.porExtenso());
     }
 }
 
