@@ -8,10 +8,21 @@ public class Moeda {
     }
 
     public LinhaDoCheque porExtenso() {
+       /* int unidades = this.valor % 10;
+        int dezenas = this.valor / 10;
+
+        if (unidades > 0 && dezenas > 0) {
+            Vintena vintena = Vintena.from(unidades);
+            return new LinhaDoCheque(Dezena.VINTE, vintena);
+        }   */
+
         if (this.valor > 29) {
-            
-            return new LinhaDoCheque(Dezena.TRINTA);
+            int unidades = this.valor % 30;
+            int dezenas = this.valor / 30;
+            Vintena vintena = Vintena.from(unidades);
+            return new LinhaDoCheque(Dezena.TRINTA, vintena);
         }
+
         if (this.valor > 20) {
             var mod = this.valor % 20;
             Vintena vintena = Vintena.from(mod);

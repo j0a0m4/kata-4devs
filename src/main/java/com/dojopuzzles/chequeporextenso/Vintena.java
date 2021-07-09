@@ -1,6 +1,7 @@
 package com.dojopuzzles.chequeporextenso;
 
 public enum Vintena {
+    ZERO("zero"),
     UM("um"),
     DOIS("dois"),
     TRES("três"),
@@ -28,7 +29,7 @@ public enum Vintena {
     }
 
     public static Vintena from(Integer valor) {
-        return Vintena.values()[valor - 1];
+        return Vintena.values()[valor];
     }
 
     @Override

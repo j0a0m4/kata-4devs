@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class LinhaDoCheque {
     private Dezena dezena;
-    private Vintena vintena;
+    private Vintena unidade;
 
-    public LinhaDoCheque(Vintena vintena) {
-        this.vintena = vintena;
+    public LinhaDoCheque(Vintena unidade) {
+        this.unidade = unidade;
     }
 
     public LinhaDoCheque(Dezena dezena) {
@@ -16,7 +16,7 @@ public class LinhaDoCheque {
 
     public LinhaDoCheque(Dezena dezena, Vintena vintena) {
         this.dezena = dezena;
-        this.vintena = vintena;
+        this.unidade = vintena;
     }
 
     public String toString() {
@@ -24,11 +24,11 @@ public class LinhaDoCheque {
             return String.format("%s reais", dezena);
         }
 
-        if (this.vintena.equals(Vintena.UM)) {
-            return String.format("%s real", vintena);
+        if (this.unidade.equals(Vintena.UM)) {
+            return String.format("%s real", unidade);
         }
 
-        return String.format("%s reais", vintena);
+        return String.format("%s reais", unidade);
     }
 
     @Override
@@ -36,6 +36,7 @@ public class LinhaDoCheque {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         LinhaDoCheque that = (LinhaDoCheque) o;
-        return Objects.equals(vintena, that.vintena);
+        return Objects.equals(unidade, that.unidade) &&
+                Objects.equals(dezena, that.dezena);
     }
 }
