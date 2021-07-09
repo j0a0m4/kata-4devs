@@ -8,6 +8,10 @@ public class Moeda {
     }
 
     public LinhaDoCheque porExtenso() {
+        if (this.valor > 29) {
+            
+            return new LinhaDoCheque(Dezena.TRINTA);
+        }
         if (this.valor > 20) {
             var mod = this.valor % 20;
             Vintena vintena = Vintena.from(mod);
