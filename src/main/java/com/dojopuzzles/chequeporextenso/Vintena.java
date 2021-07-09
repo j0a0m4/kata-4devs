@@ -9,7 +9,17 @@ public enum Vintena {
     SEIS("seis"),
     SETE("sete"),
     OITO("oito"),
-    NOVE("nove");
+    NOVE("nove"),
+    DEZ("dez"),
+    ONZE("onze"),
+    DOZE("doze"),
+    TREZE("treze"),
+    QUATORZE("quatorze"),
+    QUINZE("quinze"),
+    DEZESSEIS("dezesseis"),
+    DEZESSETE("dezessete"),
+    DEZOITO("dezoito"),
+    DEZENOVE("dezenove");
 
     private String valorPorExtenso;
 

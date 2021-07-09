@@ -1,16 +1,6 @@
 package com.dojopuzzles.chequeporextenso;
 
 public enum Dezena {
-    DEZ("dez"),
-    ONZE("onze"),
-    DOZE("doze"),
-    TREZE("treze"),
-    QUATORZE("quatorze"),
-    QUINZE("quinze"),
-    DEZESSEIS("dezesseis"),
-    DEZESSETE("dezessete"),
-    DEZOITO("dezoito"),
-    DEZENOVE("dezenove"),
     VINTE("vinte"),
     TRINTA("trinta"),
     QUARENTA("quarenta"),
@@ -27,7 +17,7 @@ public enum Dezena {
     }
 
     public static Dezena from(Integer valor) {
-        return Dezena.values()[valor - 10];
+        return Dezena.values()[valor - 20];
     }
 
     @Override
