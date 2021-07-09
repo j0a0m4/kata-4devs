@@ -11,48 +11,48 @@ class MoedaTest {
     @DisplayName("Escrever 1 real por extenso")
     void casoUm() {
         Moeda umReal = new Moeda(1);
-        assertEquals("um real", umReal.porExtenso().toString());
+        assertEquals(new LinhaDoCheque(Unidade.UM), umReal.porExtenso());
     }
 
     @Test
     @DisplayName("Escrever 2 reais por extenso")
     void casoDois() {
         Moeda doisReais = new Moeda(2);
-        assertEquals("dois reais", doisReais.porExtenso().toString());
+        assertEquals(new LinhaDoCheque(Unidade.DOIS), doisReais.porExtenso());
     }
 
     @Test
     @DisplayName("Escrever 3 reais por extenso")
     void casoTres() {
         Moeda tresReais = new Moeda(3);
-        assertEquals("três reais", tresReais.porExtenso().toString());
+        assertEquals(new LinhaDoCheque(Unidade.TRES), tresReais.porExtenso());
     }
 
     @Test
     @DisplayName("Escrever 4 reais por extenso")
     void casoQuatro() {
         Moeda quatroReais = new Moeda(4);
-        assertEquals("quatro reais", quatroReais.porExtenso().toString());
+        assertEquals(new LinhaDoCheque(Unidade.QUATRO), quatroReais.porExtenso());
     }
 
     @Test
     @DisplayName("Escrever 10 reais por extenso")
     void casoDez() {
         Moeda dezReais = new Moeda(10);
-        assertEquals("dez reais", dezReais.porExtenso().toString());
+        assertEquals(new LinhaDoCheque(Dezena.DEZ), dezReais.porExtenso());
     }
 
     @Test
     @DisplayName("Escrever 11 reais por extenso")
     void casoOnze() {
         Moeda onzeReais = new Moeda(11);
-        assertEquals("onze reais", onzeReais.porExtenso().toString());
+        assertEquals(new LinhaDoCheque(Dezena.ONZE), onzeReais.porExtenso());
     }
 
     @Test
     @DisplayName("Escrever 20 reais por extenso")
-    void casoVinte(){
+    void casoVinte() {
         Moeda vinteReais = new Moeda(20);
-        assertEquals("vinte reais", vinteReais.porExtenso().toString());
+        assertEquals(new LinhaDoCheque(Dezena.VINTE), vinteReais.porExtenso());
     }
 }
