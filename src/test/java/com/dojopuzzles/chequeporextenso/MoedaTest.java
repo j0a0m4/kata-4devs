@@ -11,28 +11,28 @@ class MoedaTest {
     @DisplayName("Escrever 1 real por extenso")
     void casoUm() {
         Moeda umReal = new Moeda(1);
-        assertEquals(new LinhaDoCheque(Unidade.UM), umReal.porExtenso());
+        assertEquals(new LinhaDoCheque(Vintena.UM), umReal.porExtenso());
     }
 
     @Test
     @DisplayName("Escrever 2 reais por extenso")
     void casoDois() {
         Moeda doisReais = new Moeda(2);
-        assertEquals(new LinhaDoCheque(Unidade.DOIS), doisReais.porExtenso());
+        assertEquals(new LinhaDoCheque(Vintena.DOIS), doisReais.porExtenso());
     }
 
     @Test
     @DisplayName("Escrever 3 reais por extenso")
     void casoTres() {
         Moeda tresReais = new Moeda(3);
-        assertEquals(new LinhaDoCheque(Unidade.TRES), tresReais.porExtenso());
+        assertEquals(new LinhaDoCheque(Vintena.TRES), tresReais.porExtenso());
     }
 
     @Test
     @DisplayName("Escrever 4 reais por extenso")
     void casoQuatro() {
         Moeda quatroReais = new Moeda(4);
-        assertEquals(new LinhaDoCheque(Unidade.QUATRO), quatroReais.porExtenso());
+        assertEquals(new LinhaDoCheque(Vintena.QUATRO), quatroReais.porExtenso());
     }
 
     @Test

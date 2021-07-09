@@ -1,6 +1,6 @@
 package com.dojopuzzles.chequeporextenso;
 
-public enum Unidade {
+public enum Vintena {
     UM("um"),
     DOIS("dois"),
     TRES("três"),
@@ -13,12 +13,12 @@ public enum Unidade {
 
     private String valorPorExtenso;
 
-    Unidade(String valorPorExtenso) {
+    Vintena(String valorPorExtenso) {
         this.valorPorExtenso = valorPorExtenso;
     }
 
-    public static Unidade from(Integer valor) {
-        return Unidade.values()[valor];
+    public static Vintena from(Integer valor) {
+        return Vintena.values()[valor];
     }
 
     @Override

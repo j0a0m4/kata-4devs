@@ -9,7 +9,7 @@ public class Moeda {
 
     public LinhaDoCheque porExtenso() {
         if (this.valor < 10) {
-            Unidade unidade = Unidade.from(this.valor - 1);
+            Vintena unidade = Vintena.from(this.valor - 1);
             return new LinhaDoCheque(unidade);
         }
 

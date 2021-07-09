@@ -4,9 +4,9 @@ import java.util.Objects;
 
 public class LinhaDoCheque {
     private Dezena dezena;
-    private Unidade unidade;
+    private Vintena unidade;
 
-    public LinhaDoCheque(Unidade unidade) {
+    public LinhaDoCheque(Vintena unidade) {
         this.unidade = unidade;
     }
 
@@ -19,7 +19,7 @@ public class LinhaDoCheque {
             return String.format("%s reais", dezena);
         }
 
-        if (this.unidade.equals(Unidade.UM)) {
+        if (this.unidade.equals(Vintena.UM)) {
             return String.format("%s real", unidade);
         }
 
