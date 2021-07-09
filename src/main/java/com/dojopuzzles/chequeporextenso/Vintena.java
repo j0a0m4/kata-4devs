@@ -28,7 +28,7 @@ public enum Vintena {
     }
 
     public static Vintena from(Integer valor) {
-        return Vintena.values()[valor];
+        return Vintena.values()[valor - 1];
     }
 
     @Override

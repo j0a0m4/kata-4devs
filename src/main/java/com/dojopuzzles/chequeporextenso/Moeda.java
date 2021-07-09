@@ -8,8 +8,14 @@ public class Moeda {
     }
 
     public LinhaDoCheque porExtenso() {
+        if (this.valor > 20) {
+            var mod = this.valor % 20;
+            Vintena vintena = Vintena.from(mod);
+            return new LinhaDoCheque(Dezena.VINTE, Vintena.UM);
+        }
+
         if (this.valor < 20) {
-            Vintena unidade = Vintena.from(this.valor - 1);
+            Vintena unidade = Vintena.from(this.valor);
             return new LinhaDoCheque(unidade);
         }
 
