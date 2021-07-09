@@ -11,7 +11,7 @@ public class Moeda {
         if (this.valor > 20) {
             var mod = this.valor % 20;
             Vintena vintena = Vintena.from(mod);
-            return new LinhaDoCheque(Dezena.VINTE, Vintena.UM);
+            return new LinhaDoCheque(Dezena.VINTE, vintena);
         }
 
         if (this.valor < 20) {
