@@ -107,5 +107,19 @@ class MoedaTest {
         Moeda quarentaReais = new Moeda(40);
         assertEquals(new LinhaDoCheque(Dezena.QUARENTA, Unidade.ZERO), quarentaReais.porExtenso());
     }
+
+    @Test
+    @DisplayName("Escrever 41 reais por extenso")
+    void casoQuarentaUm() {
+        Moeda quarentaUmReais = new Moeda(41);
+        assertEquals(new LinhaDoCheque(Dezena.QUARENTA, Unidade.UM), quarentaUmReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 49 reais por extenso")
+    void casoQuarentaNove() {
+        Moeda quarentaNoveReais = new Moeda(49);
+        assertEquals(new LinhaDoCheque(Dezena.QUARENTA, Unidade.NOVE), quarentaNoveReais.porExtenso());
+    }
 }
 
