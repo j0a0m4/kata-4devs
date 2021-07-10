@@ -128,5 +128,104 @@ class MoedaTest {
         Moeda cinquentaReais = new Moeda(50);
         assertEquals(new LinhaDoCheque(Dezena.CINQUENTA, Unidade.ZERO), cinquentaReais.porExtenso());
     }
+
+    @Test
+    @DisplayName("Escrever 51 reais por extenso")
+    void casoCinquentaUm() {
+        Moeda cinquentaUmReais = new Moeda(51);
+        assertEquals(new LinhaDoCheque(Dezena.CINQUENTA, Unidade.UM), cinquentaUmReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 59 reais por extenso")
+    void casoCinquentaNove() {
+        Moeda cinquentaNoveReais = new Moeda(59);
+        assertEquals(new LinhaDoCheque(Dezena.CINQUENTA, Unidade.NOVE), cinquentaNoveReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 60 reais por extenso")
+    void casoSessenta() {
+        Moeda sessentaReais = new Moeda(60);
+        assertEquals(new LinhaDoCheque(Dezena.SESSENTA, Unidade.ZERO), sessentaReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 61 reais por extenso")
+    void casoSessentaUm() {
+        Moeda sessentaUmReais = new Moeda(61);
+        assertEquals(new LinhaDoCheque(Dezena.SESSENTA, Unidade.UM), sessentaUmReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 69 reais por extenso")
+    void casoSessentaNove() {
+        Moeda sessentaNoveReais = new Moeda(69);
+        assertEquals(new LinhaDoCheque(Dezena.SESSENTA, Unidade.NOVE), sessentaNoveReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 70 reais por extenso")
+    void casoSetenta() {
+        Moeda setentaReais = new Moeda(70);
+        assertEquals(new LinhaDoCheque(Dezena.SETENTA, Unidade.ZERO), setentaReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 71 reais por extenso")
+    void casoSetentaUm() {
+        Moeda setentaUm = new Moeda(71);
+        assertEquals(new LinhaDoCheque(Dezena.SETENTA, Unidade.UM), setentaUm.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 79 reais por extenso")
+    void casoSetentaNove() {
+        Moeda setentaNoveReais = new Moeda(79);
+        assertEquals(new LinhaDoCheque(Dezena.SETENTA, Unidade.NOVE), setentaNoveReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 80 reais por extenso")
+    void casoOitenta() {
+        Moeda oitentaReais = new Moeda(80);
+        assertEquals(new LinhaDoCheque(Dezena.OITENTA, Unidade.ZERO), oitentaReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 81 reais por extenso")
+    void casoOitentaUm() {
+        Moeda oitentaUmReais = new Moeda(81);
+        assertEquals(new LinhaDoCheque(Dezena.OITENTA, Unidade.UM), oitentaUmReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 89 reais por extenso")
+    void casoOitentaNove() {
+        Moeda oitentaNoveReais = new Moeda(89);
+        assertEquals(new LinhaDoCheque(Dezena.OITENTA, Unidade.NOVE), oitentaNoveReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 90 reais por extenso")
+    void casoNoventa() {
+        Moeda noventaReais = new Moeda(90);
+        assertEquals(new LinhaDoCheque(Dezena.NOVENTA, Unidade.ZERO), noventaReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 91 reais por extenso")
+    void casoNoventaUm() {
+        Moeda noventaUmReais = new Moeda(91);
+        assertEquals(new LinhaDoCheque(Dezena.NOVENTA, Unidade.UM), noventaUmReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 99 reais por extenso")
+    void casoNoventaNove() {
+        Moeda noventaNoveReais = new Moeda(99);
+        assertEquals(new LinhaDoCheque(Dezena.NOVENTA, Unidade.NOVE), noventaNoveReais.porExtenso());
+    }
+
 }
 
