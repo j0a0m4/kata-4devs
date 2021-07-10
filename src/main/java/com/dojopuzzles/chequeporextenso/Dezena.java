@@ -1,6 +1,8 @@
 package com.dojopuzzles.chequeporextenso;
 
 public enum Dezena {
+    ZERO("zero"),
+    DEZ("dez"),
     VINTE("vinte"),
     TRINTA("trinta"),
     QUARENTA("quarenta"),
@@ -17,7 +19,7 @@ public enum Dezena {
     }
 
     public static Dezena from(Integer valor) {
-        return Dezena.values()[valor - 20];
+        return Dezena.values()[valor];
     }
 
     @Override

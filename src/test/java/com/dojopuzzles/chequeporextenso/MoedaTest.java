@@ -121,5 +121,12 @@ class MoedaTest {
         Moeda quarentaNoveReais = new Moeda(49);
         assertEquals(new LinhaDoCheque(Dezena.QUARENTA, Unidade.NOVE), quarentaNoveReais.porExtenso());
     }
+
+    @Test
+    @DisplayName("Escrever 50 reais por extenso")
+    void casoCinquenta() {
+        Moeda cinquentaReais = new Moeda(50);
+        assertEquals(new LinhaDoCheque(Dezena.CINQUENTA, Unidade.ZERO), cinquentaReais.porExtenso());
+    }
 }
 
