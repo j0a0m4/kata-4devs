@@ -8,17 +8,21 @@ public class Dinheiro {
     }
 
     public DinheiroPorExtenso porExtenso() {
-        int modUnidade = this.valor % 10;
-        int dezenas = this.valor / 10;
-
         if (this.valor >= 100) {
-            Unidade unidade = Unidade.from(modUnidade);
-            return new DinheiroPorExtenso(Centena.CEM, Dezena.ZERO, Unidade.ZERO);
+            int centenas = this.valor / 100;
+            int resto = this.valor % 100;
+
+            int dezenas = resto / 10;
+            int unidades = resto % 10;
+
+            return new DinheiroPorExtenso(Centena.CEM, Dezena.from(dezenas), Unidade.from(unidades));
         }
 
+        int dezenas = this.valor / 10;
+        int modUnidade = this.valor % 10;
+
         if (this.valor >= 10) {
-            Unidade unidade = Unidade.from(modUnidade);
-            return new DinheiroPorExtenso(Dezena.from(dezenas), unidade);
+            return new DinheiroPorExtenso(Dezena.from(dezenas), Unidade.from(modUnidade));
         }
 
         Unidade unidade = Unidade.from(this.valor);

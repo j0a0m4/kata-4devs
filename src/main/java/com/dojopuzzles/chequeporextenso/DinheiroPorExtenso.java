@@ -5,6 +5,7 @@ import java.util.Objects;
 public class DinheiroPorExtenso {
     private Dezena dezena;
     private Unidade unidade;
+    private Centena centena;
 
     public DinheiroPorExtenso(Unidade unidade) {
         this.unidade = unidade;
@@ -20,6 +21,9 @@ public class DinheiroPorExtenso {
     }
 
     public DinheiroPorExtenso(Centena centena, Dezena dezena, Unidade unidade) {
+        this.centena = centena;
+        this.dezena = dezena;
+        this.unidade = unidade;
     }
 
     public String toString() {
@@ -40,6 +44,7 @@ public class DinheiroPorExtenso {
         if (o == null || getClass() != o.getClass()) return false;
         DinheiroPorExtenso that = (DinheiroPorExtenso) o;
         return Objects.equals(unidade, that.unidade) &&
-                Objects.equals(dezena, that.dezena);
+                Objects.equals(dezena, that.dezena) &&
+                Objects.equals(centena, that.centena);
     }
 }
