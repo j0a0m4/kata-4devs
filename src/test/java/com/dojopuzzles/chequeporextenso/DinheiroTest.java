@@ -385,5 +385,96 @@ class DinheiroTest {
         Dinheiro duzentosENoventaENoveReais = new Dinheiro(299);
         assertEquals(new DinheiroPorExtenso(Centena.DUZENTOS, Dezena.NOVENTA, Unidade.NOVE), duzentosENoventaENoveReais.porExtenso());
     }
+
+    @Test
+    @DisplayName("Escrever 300 reais por extenso")
+    void casoTrezentos() {
+        Dinheiro trezentosReais = new Dinheiro(300);
+        assertEquals(new DinheiroPorExtenso(Centena.TREZENTOS, Dezena.ZERO, Unidade.ZERO), trezentosReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 301 reais por extenso")
+    void casoTrezentosEUm() {
+        Dinheiro trezentosEUmReais = new Dinheiro(301);
+        assertEquals(new DinheiroPorExtenso(Centena.TREZENTOS, Dezena.ZERO, Unidade.UM), trezentosEUmReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 309 reais por extenso")
+    void casoTrezentosENove() {
+        Dinheiro trezentosENoveReais = new Dinheiro(309);
+        assertEquals(new DinheiroPorExtenso(Centena.TREZENTOS, Dezena.ZERO, Unidade.NOVE), trezentosENoveReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 399 reais por extenso")
+    void casoTrezentosENoventaENove() {
+        Dinheiro trezentosENoventaENoveReais = new Dinheiro(399);
+        assertEquals(new DinheiroPorExtenso(Centena.TREZENTOS, Dezena.NOVENTA, Unidade.NOVE), trezentosENoventaENoveReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 400 reais por extenso")
+    void casoQuatrocentos() {
+        Dinheiro quatrocentosReais = new Dinheiro(400);
+        assertEquals(new DinheiroPorExtenso(Centena.QUATROCENTOS, Dezena.ZERO, Unidade.ZERO), quatrocentosReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 401 reais por extenso")
+    void casoQuatrocentosEUm() {
+        Dinheiro quatrocentosEUmReais = new Dinheiro(401);
+        assertEquals(new DinheiroPorExtenso(Centena.QUATROCENTOS, Dezena.ZERO, Unidade.UM), quatrocentosEUmReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 409 reais por extenso")
+    void casoQuatrocentosENove() {
+        Dinheiro quatrocentosENoveReais = new Dinheiro(409);
+        assertEquals(new DinheiroPorExtenso(Centena.QUATROCENTOS, Dezena.ZERO, Unidade.NOVE), quatrocentosENoveReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 500 reais por extenso")
+    void casoQuinhentos() {
+        Dinheiro quinhentosReais = new Dinheiro(500);
+        assertEquals(new DinheiroPorExtenso(Centena.QUINHENTOS, Dezena.ZERO, Unidade.ZERO), quinhentosReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 600 reais por extenso")
+    void casoSeiscentos() {
+        Dinheiro seiscentosReais = new Dinheiro(600);
+        assertEquals(new DinheiroPorExtenso(Centena.SEISCENTOS, Dezena.ZERO, Unidade.ZERO), seiscentosReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 700 reais por extenso")
+    void casoSetecentos() {
+        Dinheiro setecentosReais = new Dinheiro(700);
+        assertEquals(new DinheiroPorExtenso(Centena.SETECENTOS, Dezena.ZERO, Unidade.ZERO), setecentosReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 800 reais por extenso")
+    void casoOitocentos() {
+        Dinheiro oitocentosReais = new Dinheiro(800);
+        assertEquals(new DinheiroPorExtenso(Centena.OITOCENTOS, Dezena.ZERO, Unidade.ZERO), oitocentosReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 900 reais por extenso")
+    void casoNovecentos() {
+        Dinheiro novecentosReais = new Dinheiro(900);
+        assertEquals(new DinheiroPorExtenso(Centena.NOVECENTOS, Dezena.ZERO, Unidade.ZERO), novecentosReais.porExtenso());
+    }
+
+    @Test
+    @DisplayName("Escrever 999 reais por extenso")
+    void casoNovecentosENoventaENove() {
+        Dinheiro novecentosReais = new Dinheiro(999);
+        assertEquals(new DinheiroPorExtenso(Centena.NOVECENTOS, Dezena.NOVENTA, Unidade.NOVE), novecentosReais.porExtenso());
+    }
 }
 
