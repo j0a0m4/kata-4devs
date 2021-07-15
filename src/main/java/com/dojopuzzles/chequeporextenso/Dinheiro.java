@@ -9,12 +9,13 @@ public class Dinheiro {
 
     public DinheiroPorExtenso porExtenso() {
         if (this.valor >= 100) {
+            int centenas = this.valor / 100;
             int resto = this.valor % 100;
 
             int dezenas = resto / 10;
             int unidades = resto % 10;
 
-            return new DinheiroPorExtenso(Centena.CEM, Dezena.from(dezenas), Unidade.from(unidades));
+            return new DinheiroPorExtenso(Centena.from(centenas), Dezena.from(dezenas), Unidade.from(unidades));
         }
 
         int dezenas = this.valor / 10;

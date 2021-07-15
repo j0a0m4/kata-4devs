@@ -1,5 +1,11 @@
 package com.dojopuzzles.chequeporextenso;
 
 public enum Centena {
-    CEM
+    ZERO,
+    CEM,
+    DUZENTOS;
+
+    public static Centena from(int resto) {
+        return Centena.values()[resto];
+    }
 }
