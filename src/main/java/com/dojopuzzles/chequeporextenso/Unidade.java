@@ -10,17 +10,7 @@ public enum Unidade {
     SEIS("seis"),
     SETE("sete"),
     OITO("oito"),
-    NOVE("nove"),
-    DEZ("dez"),
-    ONZE("onze"),
-    DOZE("doze"),
-    TREZE("treze"),
-    QUATORZE("quatorze"),
-    QUINZE("quinze"),
-    DEZESSEIS("dezesseis"),
-    DEZESSETE("dezessete"),
-    DEZOITO("dezoito"),
-    DEZENOVE("dezenove");
+    NOVE("nove");
 
     private String valorPorExtenso;
 

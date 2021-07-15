@@ -40,16 +40,15 @@ class DinheiroTest {
     @DisplayName("Escrever 10 reais por extenso")
     void casoDez() {
         Dinheiro dezReais = new Dinheiro(10);
-        assertEquals(new DinheiroPorExtenso(Unidade.DEZ), dezReais.porExtenso());
+        assertEquals(new DinheiroPorExtenso(Dezena.DEZ, Unidade.ZERO), dezReais.porExtenso());
     }
 
     @Test
     @DisplayName("Escrever 11 reais por extenso")
     void casoOnze() {
         Dinheiro onzeReais = new Dinheiro(11);
-        assertEquals(new DinheiroPorExtenso(Unidade.ONZE), onzeReais.porExtenso());
+        assertEquals(new DinheiroPorExtenso(Dezena.DEZ, Unidade.UM), onzeReais.porExtenso());
     }
-
 
     @Test
     @DisplayName("Escrever 20 reais por extenso")
