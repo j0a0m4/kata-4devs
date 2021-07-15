@@ -3,6 +3,7 @@ package com.dojopuzzles.chequeporextenso;
 import java.util.Objects;
 
 public class DinheiroPorExtenso {
+    private Milhar milhar;
     private Dezena dezena;
     private Unidade unidade;
     private Centena centena;
@@ -23,6 +24,13 @@ public class DinheiroPorExtenso {
     public DinheiroPorExtenso(Centena centena, Dezena dezena, Unidade unidade) {
         this.centena = centena;
         this.dezena = dezena;
+        this.unidade = unidade;
+    }
+
+    public DinheiroPorExtenso(Milhar milhar, Centena centena, Dezena dezena, Unidade unidade) {
+        this.centena = centena;
+        this.dezena = dezena;
+        this.milhar = milhar;
         this.unidade = unidade;
     }
 

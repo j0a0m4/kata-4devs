@@ -476,5 +476,12 @@ class DinheiroTest {
         Dinheiro novecentosReais = new Dinheiro(999);
         assertEquals(new DinheiroPorExtenso(Centena.NOVECENTOS, Dezena.NOVENTA, Unidade.NOVE), novecentosReais.porExtenso());
     }
+
+    @Test
+    @DisplayName("Escrever 1000 reais por extenso")
+    void casoMil() {
+        Dinheiro novecentosReais = new Dinheiro(1000);
+        assertEquals(new DinheiroPorExtenso(Milhar.UM, Centena.ZERO, Dezena.ZERO, Unidade.ZERO), novecentosReais.porExtenso());
+    }
 }
 
