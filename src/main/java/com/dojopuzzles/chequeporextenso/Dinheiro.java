@@ -1,9 +1,9 @@
 package com.dojopuzzles.chequeporextenso;
 
-public class Moeda {
+public class Dinheiro {
     private Integer valor;
 
-    public Moeda(int valor) {
+    public Dinheiro(int valor) {
         this.valor = valor;
     }
 
