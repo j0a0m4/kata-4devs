@@ -2,19 +2,19 @@ package com.dojopuzzles.chequeporextenso;
 
 import java.util.Objects;
 
-public class LinhaDoCheque {
+public class DinheiroPorExtenso {
     private Dezena dezena;
     private Unidade unidade;
 
-    public LinhaDoCheque(Unidade unidade) {
+    public DinheiroPorExtenso(Unidade unidade) {
         this.unidade = unidade;
     }
 
-    public LinhaDoCheque(Dezena dezena) {
+    public DinheiroPorExtenso(Dezena dezena) {
         this.dezena = dezena;
     }
 
-    public LinhaDoCheque(Dezena dezena, Unidade unidade) {
+    public DinheiroPorExtenso(Dezena dezena, Unidade unidade) {
         this.dezena = dezena;
         this.unidade = unidade;
     }
@@ -35,7 +35,7 @@ public class LinhaDoCheque {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        LinhaDoCheque that = (LinhaDoCheque) o;
+        DinheiroPorExtenso that = (DinheiroPorExtenso) o;
         return Objects.equals(unidade, that.unidade) &&
                 Objects.equals(dezena, that.dezena);
     }
