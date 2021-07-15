@@ -9,7 +9,6 @@ public class Dinheiro {
 
     public DinheiroPorExtenso porExtenso() {
         if (this.valor >= 100) {
-            int centenas = this.valor / 100;
             int resto = this.valor % 100;
 
             int dezenas = resto / 10;
