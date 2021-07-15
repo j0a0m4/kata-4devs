@@ -19,6 +19,9 @@ public class DinheiroPorExtenso {
         this.unidade = unidade;
     }
 
+    public DinheiroPorExtenso(Centena centena, Dezena dezena, Unidade unidade) {
+    }
+
     public String toString() {
         if (this.dezena != null) {
             return String.format("%s reais", dezena);

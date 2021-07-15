@@ -225,5 +225,12 @@ class DinheiroTest {
         assertEquals(new DinheiroPorExtenso(Dezena.NOVENTA, Unidade.NOVE), noventaNoveReais.porExtenso());
     }
 
+    @Test
+    @DisplayName("Escrever 100 reais por extenso")
+    void casoCem() {
+        Dinheiro cemReais = new Dinheiro(100);
+        assertEquals(new DinheiroPorExtenso(Centena.CEM, Dezena.ZERO, Unidade.ZERO), cemReais.porExtenso());
+    }
+
 }
 
